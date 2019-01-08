@@ -7,7 +7,7 @@
 
     var dogToy = prompt('How many toys do you have for your dogs?')
 
-        console.log('number of dog toys:' dogToy);
+        console.log('number of dog toys:', dogToy);
 
 if(parseInt(dogs) === 1  {
     alert('That is the perfect amount of dogs, ')
