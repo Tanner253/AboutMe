@@ -21,3 +21,25 @@ h2{
     color: cyan;
     font-size: 55px;
 }
+
+#img1 {
+    float: right;
+    padding-right: 20px;
+}
+
+#img2{
+    padding-left: 25px;
+
+}
+
+ol{
+    font-size: 75px;
+    background: #444;
+    color: #ffffff;
+    align-self:center;
+    
+}
+li{
+    display:block;
+    text-align: center;
+}
