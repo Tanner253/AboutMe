@@ -6,6 +6,18 @@ header{
 /* base styles */
 
 h1{ 
-    font-size: 25px;
+    color: #ffffff;
+    font-size: 75px;
 
+}
+
+body{
+
+    background:blue
+}
+
+h2{
+ 
+    color: cyan;
+    font-size: 55px;
 }
