@@ -29,11 +29,14 @@ h2{
 #img1 {
     float: right;
     padding-right: 20px;
+    height: 15%;
+    width: 15%;
 }
 
 #img2{
     padding-left: 25px;
-
+    height:10%;
+    width:10%;
 }
 
 ol{
