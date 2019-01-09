@@ -43,10 +43,10 @@ ol{
     font-size: 75px;
     background: #444;
     color: #ffffff;
-    align-self:center;
+    text-align:center;
     
 }
 li{
-    display:block;
+    display:inline;
     text-align: center;
 }
