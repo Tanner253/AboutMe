@@ -10,7 +10,11 @@ h1{
     font-size: 75px;
 
 }
+p{
+    font-size:35px;
+    padding:50px;
 
+}
 body{
 
     background:blue
