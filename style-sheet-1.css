@@ -53,3 +53,7 @@ li{
     text-align: center;
     list-style-position: inside;
 }
+ul{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}

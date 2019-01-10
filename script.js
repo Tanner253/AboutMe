@@ -103,22 +103,27 @@ var question6 = parseInt(prompt('Hey ' + user +' What is my favorite number?')) 
 
    
     if (randomNum < question6){
-        alert('OOPS! ' + user + ', you guessed too high!' + ' number of guesses left: ' + guessesLeft1) //if input is higher than randomNum, display this
+        alert('OOPS! ' + user + ', you guessed too high!' + ' number of guesses left: ' + guessesLeft1)
+        //if input is higher than randomNum, display this
         guessesLeft1--
     }else if (randomNum > question6){
     
         alert('OOPS! ' + user + ', you guessed too low!' +' number of guesses left: ' + guessesLeft1) // if input is lower than randomNum, display this
+        
         guessesLeft1--
     }else if (question6 === randomNum){
-        alert('WOW! ' + user + ' i cannot believe you guessed my favorite number!') //if you got the answer right display this
-        var i = 0;
         score++
+        alert('WOW! ' + user + ' i cannot believe you guessed my favorite number!') //if you got the answer right display this
+        
+        
+        
+        break;
     } } }
 
     while(guessesLeft2 > 0){
  var sports = ['Soccer', 'Wrestling', 'Baseball', 'Basketball', 'Tennis' , 'hockey', 'badmitten', 'table tennis']
     for (var i = 6 ; i > 0 ; i--){
-    var question7 = prompt(' which of the following sports have i played? Soccer, Wrestling, Baseball, Basketball, Tennis')
+    var question7 = prompt(' which of the following sports have i played? Soccer, Wrestling, Baseball, Basketball, Tennis , Hockey , Badmitten, Table tennis')
     
     console.log("which of the sports do i play" , question7); 
 
@@ -136,4 +141,4 @@ if (question7.toLowerCase() === 'soccer' || question7.toLowerCase() === 'wrestli
 }
     console.log("which of the sports do i play" , question7); 
 
-    alert('congratulations! ' + user + ' you got '     +score       +     ' answers correct')
+    alert('congratulations! ' + user + ' you got '     +score       +     ' answers correct out of the possible 7. Better luck next time! :D ')
