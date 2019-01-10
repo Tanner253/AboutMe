@@ -40,13 +40,16 @@ h2{
 }
 
 ol{
-    font-size: 75px;
+    font-size: 35px;
     background: #444;
     color: #ffffff;
     text-align:center;
+    list-style-type: upper-roman;
     
 }
 li{
-    display:inline;
+    display:inline; 
+    display:list-item;
     text-align: center;
+    list-style-position: inside;
 }
