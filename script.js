@@ -3,9 +3,9 @@
 'use strict';
 
 
-    var score = 0;
-    var guessesLeft1 = 3;
-    var guessesLeft2 = 5;
+    var score = 0; //keeps track of how many answers are correct
+    var guessesLeft1 = 3; //keep track of how many guesses are left for question 6
+    var guessesLeft2 = 5; //keep track of how many guesses are left for question 7
 
 
     var aboutMe = alert('I am an outgoing student, with expirience in construction work out of Tacoma washington out of wilson high school')
@@ -52,17 +52,11 @@
     } else{ //otherwise run this code
         alert('you are incorrect :(') }
     
-
-
-
-     var question4= prompt('do i like to ride bikes?')  //declare variable and value
+    var question4= prompt('do i like to ride bikes?')  //declare variable and value
 
 
         console.log('do i like to ride bikes:', question4 ) ;//console log the answer
 
-
-
-            
     if(question4.toUpperCase() === 'Y' || question4.toUpperCase() === 'YES'){ //check if input is equal to the string "Y" || "YES" make input caps
     alert(user + ' you are correct! i love riding my bike!') //if correct run this code 
         score++
@@ -88,10 +82,6 @@
 
 
 var randomNum = Math.floor(Math.random() * 21); //assign random number to randomNum
-
-
-        
-
         console.log("answer to math.random", randomNum); //log answer to random num
 
     while(guessesLeft1 > 0 ){
@@ -106,39 +96,39 @@ var question6 = parseInt(prompt('Hey ' + user +' What is my favorite number?')) 
         alert('OOPS! ' + user + ', you guessed too high!' + ' number of guesses left: ' + guessesLeft1)
         //if input is higher than randomNum, display this
         guessesLeft1--
-    }else if (randomNum > question6){
+}else if (randomNum > question6){
     
         alert('OOPS! ' + user + ', you guessed too low!' +' number of guesses left: ' + guessesLeft1) // if input is lower than randomNum, display this
         
         guessesLeft1--
-    }else if (question6 === randomNum){
+}else if (question6 === randomNum){
         score++
         alert('WOW! ' + user + ' i cannot believe you guessed my favorite number!') //if you got the answer right display this
         
         
         
-        break;
+        break; //end loop
     } } }
 
-    while(guessesLeft2 > 0){
- var sports = ['Soccer', 'Wrestling', 'Baseball', 'Basketball', 'Tennis' , 'hockey', 'badmitten', 'table tennis']
-    for (var i = 6 ; i > 0 ; i--){
-    var question7 = prompt(' which of the following sports have i played? Soccer, Wrestling, Baseball, Basketball, Tennis , Hockey , Badmitten, Table tennis')
+    while(guessesLeft2 > 0){ //if condition is truthy then run code again, until false.
+//  var sports = ['Soccer', 'Wrestling', 'Baseball', 'Basketball', 'Tennis' , 'hockey', 'badmitten', 'table tennis']
+    for (var i = 6 ; i > 0 ; i--){ //i is equal to 6, as long as i is greater than 0, -1 from i
+    var question7 = prompt(' which of the following sports have i played? Soccer, Wrestling, Baseball, Basketball, Tennis , Hockey , Badmitten, Table tennis') //take input
     
-    console.log("which of the sports do i play" , question7); 
+    console.log("which of the sports do i play" , question7); //log question and input 
 
 
-if (question7.toLowerCase() === 'soccer' || question7.toLowerCase() === 'wrestling'){
-    alert(user + ' you are correct! (correct answeres are Soccer and Wrestling')
-     var i = 0;
-     score++;
-}else {
-    alert(user + ' you are not correct! ' + 'you have ' + guessesLeft2 +' guesses left ' )
-    guessesLeft2--
+    if (question7.toLowerCase() === 'soccer' || question7.toLowerCase() === 'wrestling'){ 
+    alert(user + ' you are correct! (correct answeres are Soccer and Wrestling') //if correct run this line
+     var i = 0; //set i = 0 - breaks loop
+     score++; //incriment score by one
+}else { //otherwise run this code
+    alert(user + ' you are not correct! ' + 'you have ' + guessesLeft2 +' guesses left ' ) // prompt how many guesses are left if incorrect
+    guessesLeft2-- //-1 from guesses
     
-}
+        }
     }
 }
-    console.log("which of the sports do i play" , question7); 
+    console.log("which of the sports do i play" , question7); //log ans and value
 
-    alert('congratulations! ' + user + ' you got '     +score       +     ' answers correct out of the possible 7. Better luck next time! :D ')
+    alert('congratulations! ' + user + ' you got ' + score + ' answers correct out of the possible 7. Better luck next time! :D ') //end
