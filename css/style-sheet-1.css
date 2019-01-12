@@ -1,59 +1,67 @@
 header{
-    background: #222;
+    background: #000000;
     color: white;
     padding: 20px;
 }
 /* base styles */
 
 h1{ 
+    width: 500px;
     color: #ffffff;
     font-size: 75px;
-
+    border: 3px solid red;
+    margin:30px 0px 10px 17px;
+    -moz-box-shadow: -5px -5px ;
+    -webkit-box-shadow: -5px -5px ;
+    box-shadow: -5px -5px  rgb(41, 247, 247);
 }
-p{
+#subHeader {
+    width:525px;
     font-size:35px;
-    padding:50px;
-
+    padding:10px;
+    margin: 0px 0px 0px 350px;
+    border: 3px solid red;
+    -moz-box-shadow: -5px -5px rgb(41, 247, 247);
+    -webkit-box-shadow: -5px -5px rgb(41, 247, 247);
+    box-shadow: -5px -5px  rgb(41, 247, 247);
+   
 }
 body{
 
-    background:blue
+    background:rgb(65, 64, 64)
 }
 
 h2{
- 
-    color: cyan;
-    font-size: 55px;
+    width: 250px;
+    margin: 10px 0px 5px 20px;
+    padding: 20px;
+    border: 10px outset rgb(65, 96, 163);
+    color: rgb(34, 185, 185);
+    font-size: 32px;
 }
 
-#img1 {
-    float: right;
-    padding-right: 20px;
-    height: 15%;
-    width: 15%;
-}
-
-#img2{
-    padding-left: 25px;
-    height:10%;
-    width:10%;
-}
-
-ol{
-    font-size: 35px;
-    background: #444;
-    color: #ffffff;
-    text-align:center;
-    list-style-type: decimal;
+#aboutMe {
+    display: block;
+    width: 450px;
+    /* margin: 40px 0px 5px 50px ; */
+    padding: 20px;
+    border: 40px inset rgb(9, 128, 240);
+    font-size: 22px;
+    color: white;
     
+
+
 }
-li{
-    display:inline; 
-    display:list-item;
-    text-align: center;
-    list-style-position: inside;
+
+#aboutBrinley {
+    display:block;
+    width: 300px;
+    margin: 0px 0px 0px 500px ;
+    padding: 20px;
+    border: 40px inset rgb(9, 128, 240);
+    font-size: 22px;
+    color: white;
+
+
 }
-ul{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
-}
+

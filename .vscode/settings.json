@@ -1,7 +1,0 @@
-{
-    "eslint.trace.server": "messages",
-    "json.trace.server": "messages",
-    "css.trace.server": "messages",
-    "html.trace.server": "messages",
-    
-}
