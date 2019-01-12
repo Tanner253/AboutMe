@@ -15,7 +15,7 @@
       "no-console": "off",
       "no-undefined": "off",
       "indent": ["error", 2],
-      "quotes": ["error", "double"],
+      "quotes": ["warn", "single"],
       "no-multi-spaces": [
         "warn",
         {
@@ -32,7 +32,7 @@
           "builtinGlobals": true
         }
       ],
-      "semi": ["error", "always"],
+      "semi": [2, "always"],
       "eol-last": "error"
     }
   }
