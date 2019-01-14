@@ -42,21 +42,19 @@ h2{
 
 #aboutMe {
     display: block;
-    width: 450px;
-    /* margin: 40px 0px 5px 50px ; */
-    padding: 20px;
-    border: 40px inset rgb(9, 128, 240);
-    font-size: 22px;
+    width:320px;
+    border: 40px outset rgb(9,128,240);
+    padding: 20px; 
+    margin: 35px 15px 25px 45px;
+    font-size: 32px;
     color: white;
-    
-
 
 }
 
 #aboutBrinley {
     display:block;
     width: 300px;
-    margin: 0px 0px 0px 500px ;
+    margin: auto ;
     padding: 20px;
     border: 40px inset rgb(9, 128, 240);
     font-size: 22px;
@@ -64,4 +62,13 @@ h2{
 
 
 }
+#brinleypic{
+    display: inline-block;
+    transform: rotate(90deg);
+    height:140px;
+    width:140px;
+}
 
+#inline-block-div {
+    display:inline-block;
+}
