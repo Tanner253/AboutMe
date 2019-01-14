@@ -5,7 +5,7 @@
 'use strict';
 
 var score = 0; //keeps track of how many answers are correct
-var guessesLeft1 = 4; //keep track of how many guesses are left for question 6
+var guessesLeft1 = 5; //keep track of how many guesses are left for question 6
 var guessesLeft2 = 6; //keep track of how many guesses are left for question 7
 
 alert('I am an outgoing student at Code Fellows, with expirience in construction work out of Tacoma Washington. I graduated from Wilson High School, pursuing my goal to be a back end-dev (maybe)');
@@ -53,14 +53,14 @@ function questionThree() {
         }
     }
 
-;
+
 function questionFour() {
     var question4= prompt('Do i have 5 animals?'); //declare variable and value
 
      console.log('do i have 5 animals?', question4 ) ;//console log the answer
 
-        if(question4.toUpperCase() === 'Y' || question4.toUpperCase() === 'YES'){ //check if input is equal to the string "Y" || "YES" make input caps
-        alert(user + ' you are correct! 4 lizards, 1 dog, and 1 cat!'); //if correct run this code
+        if(question4.toUpperCase() === 'NO' || question4.toUpperCase() === 'N'){ //check if input is equal to the string "Y" || "YES" make input caps
+        alert(user + ' you are correct! 4 lizards, 1 dog, and 1 cat! = 6 Animals '); //if correct run this code
         score++;
         }else{ //otherwise run this code
     alert('sorry you are incorrect :(  - 4 lizards, 1 dog, and 1 cat! ');
@@ -89,7 +89,7 @@ var randomNum = Math.floor(Math.random() * 21); //assign random number to random
         console.log('answer to math.random', randomNum); //log answer to random num
 
 function questionSix() {
-    while(guessesLeft1 > 0 ){
+    
         for (var i = 4; i>0 ; i--) {
 
             var question6 = parseInt(prompt('Hey ' + user +' What is my favorite number?')); //ask question
@@ -115,7 +115,7 @@ function questionSix() {
             }
         }
     }
-}
+
 function questionSeven() {
     // while(guessesLeft2 > 0){ //if condition is truthy then run code again, until false.
 //  var sports = ['Soccer', 'Wrestling', 'Baseball', 'Basketball', 'Tennis' , 'hockey', 'badmitten', 'table tennis']
